@@ -1,0 +1,11 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import About from "./About";
+import "./index.css";
+
+const path = window.location.pathname;
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  path === "/about" ? <About /> : <App />
+);
